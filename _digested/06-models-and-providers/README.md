@@ -19,11 +19,11 @@ out_of_scope:
 
 > 本层覆盖 Codex 的模型抽象面：如何统一接入 OpenAI、Anthropic、Ollama、LM Studio 等不同提供商，模型如何发现、选择和路由。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 已产出文档
 
-1. `01-model-provider-abstraction.md` — 模型提供商抽象层：trait、adapter、transport
-2. `02-model-routing-and-selection.md` — 模型路由与选择：主模型、auxiliary、fallback
-3. `03-api-adapters.md` — API 适配器：各家 provider 的具体适配
+1. `01-model-provider-abstraction.md` — 模型提供商抽象：`ModelProvider` trait、`ModelProviderInfo` 配置、三层鉴权链、codex-api 统一 Responses API 传输
+2. `02-model-routing-and-selection.md` — 模型路由与选择：`ModelsManager` trait、三种刷新策略、模型 Slug 三级回退解析、模型切换时的压缩与指令注入
+3. `03-api-adapters.md` — API 适配器：LM Studio/Ollama 本地模型管理、ChatGPT 后端、backend-client API 端点、codex-client HTTP 传输、图像模态三重门控、Bedrock/Azure 特殊处理
 
 ## 关键 crate
 
