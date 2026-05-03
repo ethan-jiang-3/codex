@@ -19,13 +19,13 @@ out_of_scope:
 
 > 本层覆盖 Codex 的能力执行面：工具怎么注册/发现/过滤/分发，命令怎么在沙箱中安全执行，以及相关的进程加固机制。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 已产出文档
 
-1. `01-tool-registry-and-dispatch.md` — 工具注册表与分发机制
-2. `02-exec-and-shell.md` — 命令执行（exec）与 shell 集成
-3. `03-sandboxing.md` — 沙箱系统：Linux seatbelt、Windows sandbox、进程隔离
-4. `04-file-operations.md` — 文件操作工具与并发控制
-5. `05-background-processes.md` — 后台进程管理与监控
+1. `01-tool-registry-and-discovery.md` — 工具注册与发现：`ToolRegistryPlan` 20 步构建、`ToolsConfig` 门控、平台差异化、延迟加载
+2. `02-exec-and-shell.md` — 命令执行与 Shell：三种执行模式对比、shell snapshot 加速、Zsh fork 提权、exec-server JSON-RPC 协议
+3. `03-sandboxing.md` — 沙箱隔离：macOS Seatbelt / Linux bwrap+seccomp / Windows RestrictedToken 三种后端、escalation 重试
+4. `04-file-operations.md` — 文件操作：`ExecutorFileSystem` trait、apply_patch 解析与 4 遍模糊搜索、list_dir BFS 安全策略
+5. `05-background-processes.md` — 后台进程管理：`UnifiedExecProcess` 生命周期、HeadTailBuffer、流式输出、进程修剪、网络审批联动
 
 ## 关键 crate
 
