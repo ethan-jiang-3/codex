@@ -20,12 +20,12 @@ out_of_scope:
 
 > 本层覆盖 Codex 的心脏：Agent 如何从用户输入走到模型调用、工具执行、响应生成。核心 crate 是 `codex-rs/core/`。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 文档
 
-1. `01-agent-loop-and-lifecycle.md` — Agent 核心循环与生命周期（从初始化到 teardown）
-2. `02-tool-dispatch-and-execution.md` — 工具分发机制：注册、schema、dispatch、特殊工具
-3. `03-agent-identity-and-system-prompt.md` — Agent 身份与系统提示词装配
-4. `04-context-and-compression.md` — 上下文管理与压缩策略
+1. `01-agent-loop-and-lifecycle.md` — Agent 生命周期：7 阶段创建→运行→销毁，三种 teardown 语义（shutdown / release / close），channel 架构
+2. `02-tool-dispatch-and-execution.md` — 工具分发：三条 schema 来源、ToolRouter 组装、7 阶段 dispatch 链路、25 个可用性 gate、AGENT_LOOP_TOOLS 概念澄清
+3. `03-agent-identity-and-system-prompt.md` — Agent 身份（JWT + Ed25519）+ system prompt 11 层装配 + reference context diff 机制 + prompt caching 失效触发条件
+4. `04-context-and-compression.md` — ContextManager 结构、Memento compaction 策略、pre-turn/mid-turn 触发、失败回退、与 prompt caching 的交互
 
 ## 关键 crate
 
