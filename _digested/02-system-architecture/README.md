@@ -19,10 +19,10 @@ out_of_scope:
 
 Codex 是 Zed 编辑器的 AI Agent 系统，包含约 100 个 Rust crate（`codex-rs/`），外加一个 Node.js CLI 前端（`codex-cli/`）。本层负责建立系统全景心智模型。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 文档
 
-1. `01-system-landscape.md` — 系统全景：crate 地图、主子系统、依赖关系
-2. `02-information-flow-and-boundaries.md` — 信息流与模块边界：从用户输入到 agent 响应
+1. `01-system-landscape.md` — 系统全景：技术栈、9 域 108 crate 地图、进程模型、主子系统 mermaid 图、系统约束
+2. `02-information-flow-and-boundaries.md` — 信息流与模块边界：数据面/控制面、完整信息流（7 阶段）、5 个持久化写入点、8 条模块边界契约
 
 ## 关键 crate 分组（初步，待源码复核）
 
