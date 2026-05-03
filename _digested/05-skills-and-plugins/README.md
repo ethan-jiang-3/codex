@@ -19,11 +19,11 @@ out_of_scope:
 
 > 本层覆盖 Codex 的可编程扩展面：技能（skills）如何定义、加载和执行，插件（plugins）如何扩展系统能力。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 已产出文档
 
-1. `01-skill-system.md` — 技能系统：定义、加载、执行、发现
-2. `02-plugin-mechanism.md` — 插件机制：注册、生命周期、扩展点
-3. `03-skill-authoring.md` — 技能创作指南：SKILL.md 格式、最佳实践
+1. `01-skill-system.md` — 技能系统：SKILL.md 格式、6 个 skill root 来源、BFS 发现与解析、4 阶段触发流程、2 级上下文注入、预算管理
+2. `02-plugin-mechanism.md` — 插件机制：声明式模型、`PluginId` 格式、`plugin.json` 清单、4 种扩展点、marketplace 发现与商店、完整生命周期
+3. `03-skill-authoring.md` — 技能创作指南：SKILL.md + openai.yaml 字段规范、验证约束、目录结构约定、skill-creator 最佳实践
 
 ## 关键 crate
 
