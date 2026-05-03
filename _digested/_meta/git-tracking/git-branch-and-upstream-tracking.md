@@ -44,9 +44,9 @@ out_of_scope:
 ### Branches
 
 - 当前分支：`ethan`
-- `ethan` HEAD：`35aaa5d9f Bound websocket request sends with idle timeout (#20751)`
+- `ethan` HEAD：`229fef4eb Add 10-phase progressive production plan for _digested owner docs`
 - `main` HEAD：`35aaa5d9f Bound websocket request sends with idle timeout (#20751)`
-- 当前 `ethan` 与 `main` 指向同一 commit（消化文档工作尚未开始）
+- 当前 `ethan` 领先 `main` 3 commits（均为 `_digested/` + `_tmp_tracking/` 文档提交）
 
 ### Remotes
 
@@ -59,7 +59,7 @@ out_of_scope:
 
 - `main` 跟踪：`origin/main`
 - `main...origin/main`：`0 / 0`（`main` 与当前远端跟踪分支一致）
-- `ethan` 相对 `main`：当前指向同一 commit（消化工作尚未产生 ahead 提交）
+- `ethan` 相对 `main`：领先 3 commits（均为 `_digested/` + `_tmp_tracking/` 文档，无源码变更）
 
 ---
 
