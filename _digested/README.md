@@ -57,6 +57,8 @@ out_of_scope:
 - **术语必须中英文对照**：Codex 里不够大众/容易翻译跑偏的专有术语，首次出现必须写成「中文（English）」并保留可回溯的英文原词，避免只写中文导致与源码/讲稿对不上。
 - 当一个话题需要补充时，优先补到 front matter 的 `owns` 所声明的那篇文档。
 - 当一条信息只和历史演进有关，而不属于当前推荐读法时，应放入 `_meta/`。
+- **写作风格**：所有文档遵循 `WRITING-STYLE.md` 的结构模板、编号规范、表格原型和深度梯度规则。
+- **上游同步工作流**：`_skills/codex-progressive-sync/SKILL.md` 定义了如何执行一次完整的 upstream sync 切片。
 
 ### `sync_status` front matter 约定
 
