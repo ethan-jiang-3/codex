@@ -19,10 +19,10 @@ out_of_scope:
 
 > 本层覆盖 Codex 的数据持久化面：对话状态怎么存、记忆系统怎么工作、thread-store 怎么组织会话。
 
-## 计划文档（尚未编写，待源码复核后逐步填充）
+## 已产出文档
 
-1. `01-state-and-thread-store.md` — 状态管理与 thread-store：会话持久化、检索、恢复
-2. `02-memory-system.md` — 记忆系统：MEMORY.md、USER.md、外部 memory provider
+1. `01-state-management-and-persistence.md` — 状态管理与持久化：SQLite 双库设计、`ThreadStore` trait 抽象、`LocalThreadStore` rollout JSONL + SQLite 双写、`LiveThread` 生命周期、agent-graph-store 父子拓扑
+2. `02-memory-system.md` — 记忆系统：两阶段管线（Phase 1 提取 + Phase 2 整合）、read path developer instruction 注入、citation 解析与追溯、thread memory mode 生命周期、git baseline workspace
 
 ## 关键 crate
 
